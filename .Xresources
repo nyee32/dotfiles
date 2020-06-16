@@ -1,0 +1,205 @@
+! emacs*Background: grey1
+! emacs*Foreground:  Wheat
+! emacs*pointerColor: red
+! emacs*cursorColor: red
+! !emacs*bitmapIcon: on
+! !emacs*font: fixed
+! ! below needed for emacs23+ used to just be fixed
+emacs*font: 6x13
+emacs*geometry: 100x50
+emacs*Tabs*background: Blue
+emacs*toolBar: 0
+
+
+emacs*Background: #737373
+emacs*Foreground: #cecece
+! xemacs*pointerColor: Orchid
+! xemacs*cursorColor: red
+!xemacs*bitmapIcon: on
+!xemacs*font: fixed
+! xemacs*Tabs*background: Blue
+emacs*ScrollBar.Background: skyblue
+emacs*ScrollBar.troughColor: lightgray
+
+Emacs*XmTextField.translations: #override\n\
+	<Key>osfBackSpace:	delete-previous-character()\n\
+	<Key>osfDelete:	delete-previous-character()\n\
+	Ctrl<Key>h: 		delete-previous-character()\n\
+	Ctrl<Key>d: 		delete-next-character()\n\
+	Meta<Key>osfDelete:	delete-previous-word()\n\
+	Meta<Key>osfBackSpace:	delete-previous-word()\n\
+	Meta<Key>d:		delete-next-word()\n\
+	Ctrl<Key>k:		delete-to-end-of-line()\n\
+	Ctrl<Key>g:		process-cancel()\n\
+	Ctrl<Key>b:		backward-character()\n\
+	<Key>osfLeft:		backward-character()\n\
+	Ctrl<Key>f:		forward-character()\n\
+	<Key>osfRight:		forward-character()\n\
+	Meta<Key>b:		backward-word()\n\
+	Meta<Key>osfLeft:	backward-word()\n\
+	Meta<Key>f:		forward-word()\n\
+	Meta<Key>osfRight:	forward-word()\n\
+	Ctrl<Key>e:		end-of-line()\n\
+	Ctrl<Key>a:		beginning-of-line()\n\
+	Ctrl<Key>w:		cut-clipboard()\n\
+	Meta<Key>w:		copy-clipboard()\n\
+	<Btn2Up>:		copy-primary()\n
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! xterm (and friends)
+
+XTerm*highlightSelection:  true
+xterm*highlightColor:#848400
+xterm*cursorColor:Red
+! Uncomment this to use color for the bold attribute
+XTerm*VT100*colorBDMode:  on
+XTerm*VT100*colorBD:  blue
+! Uncomment this to use color for underline attribute
+XTerm*VT100*colorULMode:  on
+XTerm*VT100*underLine:  off
+XTerm*VT100*colorUL:  magenta
+! Uncomment this to display the scrollbar
+XTerm*scrollBar:  true
+XTerm*scrollkey:  true
+Xterm*rightScrollBar: true
+XTerm*geometry: 80x25
+XTerm*font: fixed
+
+! This resource specifies whether or not to ignore the 'alternate screen'
+! of applications such as vi.  When it is on, these applications will restore
+! the contents of the screen when they are exited to what they were before
+! they were started.  When it is off, the contents of vi will remain on the
+! screen after the program is quit.
+XTerm*VT100.titeInhibit:  true
+
+! Uncomment this to turn off color mode in your xterms
+XTerm*VT100*colorMode:  on
+XTerm*VT100*dynamicColors:  on
+
+! Number of lines of scrollback to save
+XTerm*saveLines:	32767
+
+xterm*reverseWrap:	true
+*VT100.Translations: #override \
+    <Key>BackSpace: string(0x7F)\n\
+    <Key>Delete:    string("\033[3~")\n\
+    <Key>Home:      string("\033[1~")\n\
+    <Key>End:       string("\033[4~")
+*ttyModes: erase ^?
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! aterm (and friends)
+
+Aterm*highlightSelection:  true
+aterm*cursorColor:Red
+aterm*cursorColor2:#848400
+aterm*visualBell: false
+! Uncomment this to display the scrollbar
+Aterm*scrollBar:  true
+aterm*scrollBar_right: true
+Aterm*geometry: 85x21
+!aterm*font:-*-fixed-medium-r-*-*-13-*-*-*-*-*-iso8859-8
+!aterm*boldFont:-*-fixed-bold-r-*-*-13-*-*-*-*-*-iso8859-8
+! Number of lines of scrollback to save
+Aterm*saveLines:	32767
+ATerm*colorBD:  blue
+ATerm*colorUL:  magenta
+
+XTerm*background:  #000000
+XTerm*foreground:  #D6D1D1
+XTerm*color0:      #000000
+XTerm*color1:      #9e1828
+XTerm*color2:      #aece92
+XTerm*color3:      #968a38
+XTerm*color4:      #4682B4
+XTerm*color5:      #963c59
+XTerm*color6:      #418179
+XTerm*color7:      #bebebe
+XTerm*color8:      #666666
+XTerm*color9:      #cf6171
+XTerm*color10:     #c5f779
+XTerm*color11:     #fff796
+XTerm*color12:     #4186be
+XTerm*color13:     #cf9ebe
+XTerm*color14:     #71bebe
+XTerm*color15:     #ffffff
+
+Aterm*background:  #000000
+Aterm*foreground:  #D6D1D1
+Aterm*color0:      #000000
+Aterm*color1:      #9e1828
+Aterm*color2:      #aece92
+Aterm*color3:      #968a38
+Aterm*color4:      #4682B4
+Aterm*color5:      #963c59
+Aterm*color6:      #418179
+Aterm*color7:      #bebebe
+Aterm*color8:      #666666
+Aterm*color9:      #cf6171
+Aterm*color10:     #c5f779
+Aterm*color11:     #fff796
+Aterm*color12:     #4186be
+Aterm*color13:     #cf9ebe
+Aterm*color14:     #71bebe
+Aterm*color15:     #ffffff
+
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! aterm (and friends)
+
+rxvt*highlightSelection:  true
+rxvt*cursorColor:Red
+rxvt*cursorColor2:#848400
+rxvt*visualBell: false
+! Uncomment this to display the scrollbar
+rxvt*scrollBar:  true
+rxvt*scrollBar_right: true
+rxvt*geometry: 85x21
+!aterm*font:-*-fixed-medium-r-*-*-13-*-*-*-*-*-iso8859-8
+!aterm*boldFont:-*-fixed-bold-r-*-*-13-*-*-*-*-*-iso8859-8
+! Number of lines of scrollback to save
+rxvt*saveLines:	32767
+rxvt*colorBD:  blue
+rxvt*colorUL:  magenta
+
+rxvt*background:  #000000
+rxvt*foreground:  #D6D1D1
+rxvt*color0:      #000000
+rxvt*color1:      #9e1828
+rxvt*color2:      #aece92
+rxvt*color3:      #968a38
+rxvt*color4:      #4682B4
+rxvt*color5:      #963c59
+rxvt*color6:      #418179
+rxvt*color7:      #bebebe
+rxvt*color8:      #666666
+rxvt*color9:      #cf6171
+rxvt*color10:     #c5f779
+rxvt*color11:     #fff796
+rxvt*color12:     #4186be
+rxvt*color13:     #cf9ebe
+rxvt*color14:     #71bebe
+rxvt*color15:     #ffffff
+
+
+! Dracula Xresources palette
+*.foreground: #F8F8F2
+*.background: #282A36
+*.color0:     #000000
+*.color8:     #4D4D4D
+*.color1:     #FF5555
+*.color9:     #FF6E67
+*.color2:     #50FA7B
+*.color10:    #5AF78E
+*.color3:     #F1FA8C
+*.color11:    #F4F99D
+*.color4:     #BD93F9
+*.color12:    #CAA9FA
+*.color5:     #FF79C6
+*.color13:    #FF92D0
+*.color6:     #8BE9FD
+*.color14:    #9AEDFE
+*.color7:     #BFBFBF
+*.color15:    #E6E6E6
